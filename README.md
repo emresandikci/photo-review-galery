@@ -62,6 +62,18 @@ git commit -m "docs(readme): server link added"
 
 # How to start local development on this repo
 
+## <span style="color:red;">Step 1</span>
+
+First of all, clone the GitHub repo to your local and create a .env file and add the below environment variables.
+
+### Please follow the [Unsplash](https://unsplash.com/documentation) API documentation to get the access key and API URL
+
+```
+API_URL, UNSPLASH_ACCESS_KEY
+```
+
+## <span style="color:red;">Step 2</span>
+
 To get this repo to your local development environment, run the below script in your terminal and Ta daa, it's running !!!
 
 ```bash
