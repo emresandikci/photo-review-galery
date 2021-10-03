@@ -26,6 +26,14 @@ While developing this library you should take attention to linter rules, all of 
 
 If you get a lint's error when you committing a message, you can check for [eslint](https://eslint.org/docs/user-guide/getting-started) linter rules or if you get an error because of your commit message you can check below commit message types and examples or you can check from [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## Svgr
+
+I use [SVGR](https://react-svgr.com/) library to convert svg files to react component.
+
+```bash
+yarn build:icons
+```
+
 ## **Commit-lint Types**
 
 **Examples:**
