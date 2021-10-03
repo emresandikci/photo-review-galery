@@ -21,11 +21,11 @@ module.exports = (env, { mode, mobile }) => {
     devServer.host = getLocalExternalIP();
   }
   return {
-    entry: path.resolve(__dirname, 'src/index.js'),
+    entry: path.resolve(__dirname, 'src/app.js'),
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'reb-es-[contenthash].js?v=[fullhash]',
-      chunkFilename: 'reb-es-[name].js?v=[fullhash]',
+      filename: 'photo-review-[contenthash].js?v=[fullhash]',
+      chunkFilename: 'photo-review-[name].js?v=[fullhash]',
       publicPath: '/',
     },
     mode,
@@ -80,6 +80,7 @@ module.exports = (env, { mode, mobile }) => {
       new CopyWebpackPlugin({
         patterns: [
           {
+            noErrorOnMissing: true,
             from: 'src/public',
             globOptions: { ignore: ['**/*.svg', '**/*.html'] },
             transform: function (fileContent, path) {

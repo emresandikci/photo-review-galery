@@ -1,10 +1,10 @@
-# React Easy Boilerplate by [emresandikci](https://emresandikci.com)
+# Photo Review Galery
 
-### An Easy starter boilerplate for React.js
+[Go to demo =>](#)
 
 <br/>
 
-# Please read this section before starting to develop.
+# Please read this section before starting to development.
 
 > First of all you have to install these plugins to your editor (**vscode**), but if you are using another code editor or IDE install them for your dev environment
 
@@ -40,7 +40,7 @@ git commit -m "docs(readme): server link added"
 
 - **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 - **ci:** Changes to our CI configuration files and scripts (example scopes: Circle, BrowserStack, SauceLabs)
-- **chore:** Updating packages,build project etc. (no production code change)
+- **chore:** Updating packages,build project, add file or folder etc. (no production code change)
 - **docs:** Documentation only changes
 - **feat:** A new feature
 - **fix:** A bug fix
@@ -57,5 +57,5 @@ git commit -m "docs(readme): server link added"
 To get this repo to your local development environment, run the below script in your terminal and Ta daa, it's running !!!
 
 ```bash
- git clone https://github.com/emresandikci/react-easy-boilerplate && cd react-easy-boilerplate && yarn install && yarn dev
+ git clone https://github.com/emresandikci/photo-review-galery.git && cd photo-review-galery && yarn install && yarn dev
 ```
