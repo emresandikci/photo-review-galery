@@ -1,15 +1,14 @@
-import React from 'react';
-import styles from './styles';
+import styled from 'styled-components';
 import { Box } from 'ui';
 
-export default function Container(props) {
-  return (
-    <Box
-      as="main"
-      css={`
-        ${styles.base}
-      `}
-      {...props}
-    />
-  );
-}
+const Container = styled(Box)`
+  margin: 0;
+  padding: 0 1rem;
+  height: 100%;
+`;
+
+Container.defaultProps = {
+  as: 'main',
+};
+
+export default Container;
