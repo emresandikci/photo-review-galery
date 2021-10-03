@@ -1,1 +1,2 @@
-export { default as Seo } from './Seo';
+export { default as Seo } from './seo';
+export { default as constant } from './constant';

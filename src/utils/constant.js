@@ -1,10 +1,10 @@
 const constant = {
   seo: {
-    title: 'React boilerplate',
+    title: 'Photo Review',
     description: '',
     baseUrl: 'http://www.emresandikci.com',
-    ogTitle: 'Full Stack Developer',
-    ogDescription: 'JS,Reactjs,Nodejs...',
+    ogTitle: 'phoot review app',
+    ogDescription: 'phoot review and like',
     ogUrl: '',
     ogImage: '',
     ogImageAltTag: '',
@@ -19,6 +19,16 @@ const constant = {
       website: 'website',
       article: 'article',
     },
+  },
+  httpStatus: {
+    OK: 200,
+    CREATED: 201,
+    NO_CONTENT: 204,
+    BAD_REQUEST: 400,
+    UNAUTHORIZED: 401,
+    FORBIDDEN: 403,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR: 500,
   },
 };
 

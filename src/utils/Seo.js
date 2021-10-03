@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import constant from './contant';
+import { constant } from 'utils';
 
 function Seo({
   title,
@@ -25,7 +25,7 @@ function Seo({
     return description ? description : constant.seo.description;
   };
   const getMediaTitle = () => {
-    return `${ogTitle ? ogTitle : constant.seo.title} | emresandikci.com`;
+    return `${ogTitle ? ogTitle : constant.seo.title}`;
   };
   const getMediaDescription = () => {
     return ogDescription ? ogDescription : constant.seo.description;
@@ -48,7 +48,7 @@ function Seo({
     }
   };
   return (
-    <Helmet defaultTitle={`${getTitle()} | emresandikci.com`}>
+    <Helmet defaultTitle={`${getTitle()}`}>
       {/* site meta tags */}
       <meta name="description" content={getDescription()} />
       {isNoIndex ? <meta name="robots" content="noindex" /> : null}
