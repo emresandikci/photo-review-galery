@@ -1,0 +1,4 @@
+//images types
+export const GET_IMAGE_STARTED = 'GET_IMAGE_STARTED';
+export const GET_IMAGE_SUCCEDED = 'GET_IMAGE_SUCCEDED';
+export const GET_IMAGE_FAILED = 'GET_IMAGE_FAILED';
