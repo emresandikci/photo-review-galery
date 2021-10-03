@@ -57,5 +57,5 @@ git commit -m "docs(readme): server link added"
 To get this repo to your local development environment, run the below script in your terminal and Ta daa, it's running !!!
 
 ```bash
- git clone https://github.com/emresandikci/photo-review-galery.git && cd photo-review-galery && yarn install && yarn dev
+ git clone https://github.com/emresandikci/photo-review-galery.git && cd photo-review-galery && yarn install && yarn prepare && yarn dev
 ```
