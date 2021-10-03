@@ -1,7 +1,13 @@
+import { ApprovedImages, RandomImageViewer } from 'containers';
 import React from 'react';
 
 function Home() {
-  return <div>test</div>;
+  return (
+    <>
+      <ApprovedImages />
+      <RandomImageViewer />
+    </>
+  );
 }
 
 export default Home;
