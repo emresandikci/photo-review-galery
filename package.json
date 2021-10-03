@@ -22,7 +22,8 @@
     "lint:watch": "esw src -w --color",
     "lint": "eslint src",
     "lint:fix": "yarn lint --fix",
-    "validate": "prettier --check \"src/**/*.{js,jsx,css,json}\" && yarn lint"
+    "validate": "prettier --check \"src/**/*.{js,jsx,css,json}\" && yarn lint",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -74,7 +75,7 @@
     "html-loader": "^2.1.0",
     "html-minifier-terser": "^5.1.1",
     "html-webpack-plugin": "^5.2.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "jsonminify": "^0.4.1",
     "lint-staged": "^10.5.4",
     "prettier": "^2.3.2",
