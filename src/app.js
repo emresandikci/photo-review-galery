@@ -6,6 +6,8 @@ import { Home } from 'pages';
 import { GlobalStyle } from 'ui';
 import { Layout } from 'containers';
 import { Seo } from 'utils';
+import { Provider } from 'react-redux';
+import store from 'store';
 
 const theme = {
   colors: {
@@ -23,17 +25,19 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Seo />
-      <Router>
-        <Layout>
-          <Switch>
-            <Route path="/" component={Home} exact />
-          </Switch>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Seo />
+        <Router>
+          <Layout>
+            <Switch>
+              <Route path="/" component={Home} exact />
+            </Switch>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
