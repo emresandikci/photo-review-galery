@@ -22,4 +22,8 @@ export default createGlobalStyle`
         box-sizing: inherit;
         margin: 0;
     }
+    
+    .icon-reject {
+        transform: rotate(45deg);
+    }
 `;
