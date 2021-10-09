@@ -6,7 +6,7 @@ const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 const { httpStatus } = constant;
 
 export const getRandomImage = async (dispatch) => {
-  const randomPhotoURL = `${API_URL}/photos/random?client_id=${ACCESS_KEY}`; //`${API_URL}/photos/random`;
+  const randomPhotoURL = `${API_URL}/photos/random?client_id=${ACCESS_KEY}`;
   try {
     dispatch({
       type: GET_IMAGE_STARTED,
