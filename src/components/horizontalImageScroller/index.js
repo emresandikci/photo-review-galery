@@ -93,6 +93,7 @@ HorizontalScrollContainer.Scroller = styled(Box)`
 
 const ScrollableImageContainer = styled(Box)`
   padding: 2rem 0 0 0;
+  margin-bottom: 2rem;
   & > h5 {
     text-transform: uppercase;
     margin-bottom: 1rem;

@@ -65,7 +65,8 @@ const RandomImageViewerContainer = styled(Box)`
   padding: 2rem 0;
   border-top: 1px solid ${({ theme }) => theme.colors.gray};
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   cursor: ${({ hasImage }) => (!hasImage ? 'pointer' : 'initial')};
   :hover {
