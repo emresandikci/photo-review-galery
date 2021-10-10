@@ -1,5 +1,6 @@
 import { GET_IMAGE_FAILED, GET_IMAGE_STARTED, GET_IMAGE_SUCCEDED } from 'store/types/images';
 import { constant } from 'utils';
+
 const API_URL = process.env.API_URL;
 const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 
