@@ -7,7 +7,7 @@ function PhotoInfo({ data }) {
   return (
     <InfoContainer className="info-container">
       <Info>
-        <Image src={profile_image.small} height={32} width={32} />
+        <Image src={profile_image?.small} height={32} width={32} />
         <Box>{name}</Box>
       </Info>
     </InfoContainer>
