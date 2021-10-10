@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Button, Box } from 'ui';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { getRandomImage } from 'store/actions/imagesActions';
 import { approveImage, rejectImage } from 'store/actions/viewedImagesActions';
 import { IconCheck, IconPlus, Spinner } from 'icons';
 
@@ -12,25 +11,13 @@ export default function ApproveRejectButtons() {
     (state) => state.images
   );
 
-  const { data: viewedImages, isLoading: isViewedImagesLoading } = useSelector(
-    (state) => state.viewedImages
-  );
+  const { isLoading: isViewedImagesLoading } = useSelector((state) => state.viewedImages);
 
   const dispatch = useDispatch();
 
-  const onApproved = () => {
-    if (viewedImages.some(({ id, isApproved }) => id === randomImage.id && isApproved))
-      return getRandomImage(dispatch);
+  const onApproved = () => dispatch(approveImage(randomImage));
 
-    approveImage(randomImage, dispatch);
-  };
-
-  const onRejected = () => {
-    if (viewedImages.some(({ id, isRejected }) => id === randomImage.id && isRejected))
-      return getRandomImage(dispatch);
-
-    rejectImage(randomImage, dispatch);
-  };
+  const onRejected = () => dispatch(rejectImage(randomImage));
 
   return (
     <ApproveRejectButtonsContainer hasRandomImage={randomImage}>
@@ -54,7 +41,7 @@ const ApproveRejectButtonsContainer = styled(Box)`
   margin-top: 1rem;
   padding: 1rem 0;
   display: ${({ hasRandomImage }) => (hasRandomImage ? 'flex' : 'none')};
-  display: flex;
+
   justify-content: space-around;
   & > button {
     width: 100%;

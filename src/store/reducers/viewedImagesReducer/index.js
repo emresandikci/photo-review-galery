@@ -67,7 +67,7 @@ const reducer = (state = initialState, { type, payload }) => {
     case DELETE_VIEWED_IMAGES_SUCCEDED:
       return {
         ...state,
-        data: state.data?.filter((f) => f.id !== payload),
+        data: payload,
         isLoading: false,
       };
 

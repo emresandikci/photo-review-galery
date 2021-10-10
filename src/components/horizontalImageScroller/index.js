@@ -24,9 +24,7 @@ export default function HorizontalImageScroller({ title = '', data = [], ...prop
     scrollRef.current.scrollTo((scrollRef.current.scrollLeft -= 125), 0);
   };
 
-  const onRemove = (id) => {
-    removeImage(id, dispatch);
-  };
+  const onRemove = (id) => dispatch(removeImage(id));
 
   return (
     <ScrollableImageContainer {...props}>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Box, Image } from 'ui';
 import { NoImage, PhotoInfo } from 'components';
 import { useSelector, useDispatch } from 'react-redux';
@@ -12,21 +12,9 @@ export default function RandomImager() {
     error: randomImageError,
   } = useSelector((state) => state.images);
 
-  const { data: viewedImages } = useSelector((state) => state.viewedImages);
-
   const dispatch = useDispatch();
 
-  const onRequestRandomImage = () => getRandomImage(dispatch);
-
-  useEffect(() => {
-    const isRejectedImage =
-      !isImagesLoading &&
-      viewedImages?.some((img) => img?.id === randomImage?.id && img?.isRejected);
-
-    if (isRejectedImage) {
-      getRandomImage(dispatch);
-    }
-  }, []);
+  const onRequestRandomImage = () => dispatch(getRandomImage());
 
   if (!randomImage)
     return (
