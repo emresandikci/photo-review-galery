@@ -41,7 +41,7 @@ export default function HorizontalImageScroller({ title = '', data = [], ...prop
               <React.Fragment key={i}>
                 <ImageContainer>
                   <Image src={img.urls.thumb} />
-                  <IconContainer>
+                  <IconContainer className="icon-container">
                     <IconCheck className="icon-check" />
                   </IconContainer>
                   <RemoveImageContainer className="remove-image">
@@ -60,7 +60,9 @@ export default function HorizontalImageScroller({ title = '', data = [], ...prop
 }
 
 const RemoveImageContainer = styled(Box)`
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -73,6 +75,8 @@ const RemoveImageContainer = styled(Box)`
   min-width: 125px;
   max-width: 125px;
   margin: 0 2.5px;
+  opacity: 0;
+  transition: opacity 700ms;
 `;
 
 const HorizontalScrollContainer = styled(Box)`
@@ -87,6 +91,10 @@ HorizontalScrollContainer.Scroller = styled(Box)`
   overflow-x: auto;
   display: flex;
   width: 100%;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const ScrollableImageContainer = styled(Box)`
@@ -101,11 +109,12 @@ const ScrollableImageContainer = styled(Box)`
 const ImageContainer = styled(Box)`
   position: relative;
   :hover {
+    .icon-container {
+      display: none;
+    }
     .remove-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: rgba(59, 85, 228, 0.7);
+      opacity: 1;
     }
   }
   & > img {
