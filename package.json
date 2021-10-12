@@ -15,6 +15,8 @@
     "dev:beta": "webpack serve --open --mode none",
     "dev:mobile": "webpack serve --open --mode development --mobile",
     "start": "webpack serve --open --mode production",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "build": "yarn clean && yarn lint:fix && yarn format && webpack --mode production",
     "build:dev": "yarn clean && yarn lint:fix && yarn format && webpack --mode development",
     "build:icons": "yarn svgr ./src/public/icons -d ./src/icons --svgo-config .svgorc.json",
