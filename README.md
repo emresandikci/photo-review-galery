@@ -76,6 +76,10 @@ API_URL, UNSPLASH_ACCESS_KEY
 
 To get this repo to your local development environment, run the below script in your terminal and Ta daa, it's running !!!
 
+## <span style="color:red;">NOTICE</span>
+
+## If the below script run before the create env file and variables, the project will crash because of that, the browser storage must be clean, re-run the project and refresh the page after env variables added.
+
 ```bash
  git clone https://github.com/emresandikci/photo-review-galery.git && cd photo-review-galery && yarn install && yarn prepare && yarn dev
 ```
