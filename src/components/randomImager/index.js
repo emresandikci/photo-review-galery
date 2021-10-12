@@ -26,6 +26,7 @@ export default function RandomImager() {
           iconSize={'64px'}
           hasError={randomImageError}
           onClick={onRequestRandomImage}
+          data-testid="no-image"
         />
       </RandomImageViewerContainer>
     );
