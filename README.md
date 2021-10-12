@@ -66,7 +66,7 @@ git commit -m "docs(readme): server link added"
 
 First of all, clone the GitHub repo to your local and create a .env file and add the below environment variables.
 
-### Please follow the [Unsplash](https://unsplash.com/documentation) API documentation to get t access key and API URL
+### Please follow the [Unsplash](https://unsplash.com/documentation) API documentation to get the access key and API URL
 
 ```
 API_URL, UNSPLASH_ACCESS_KEY
