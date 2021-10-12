@@ -55,7 +55,7 @@ git commit -m "docs(readme): server link added"
 - **perf:** A code change that improves performance
 - **refactor:** A code change that neither fixes a bug nor adds a feature, when refactoring a production code, eg. renaming a variable.
 - **revert:** A commit revert message
-- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons,css etc)
 - **test:** Adding missing tests or correcting existing tests
 
 #
@@ -66,7 +66,7 @@ git commit -m "docs(readme): server link added"
 
 First of all, clone the GitHub repo to your local and create a .env file and add the below environment variables.
 
-### Please follow the [Unsplash](https://unsplash.com/documentation) API documentation to get the access key and API URL
+### Please follow the [Unsplash](https://unsplash.com/documentation) API documentation to get t access key and API URL
 
 ```
 API_URL, UNSPLASH_ACCESS_KEY
