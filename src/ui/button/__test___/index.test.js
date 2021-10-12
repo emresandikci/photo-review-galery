@@ -5,8 +5,8 @@ import { Button } from 'ui';
 
 const text = 'hello world';
 
-const button = render(<Button>{text}</Button>);
+const { getByText } = render(<Button>{text}</Button>);
 
 it(`should be render with ${text} text`, () => {
-  expect(button.getByText(text)).toHaveTextContent(text);
+  expect(getByText(text)).toHaveTextContent(text);
 });
