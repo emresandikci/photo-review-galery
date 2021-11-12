@@ -36,7 +36,7 @@
   },
   "lint-staged": {
     "src/**/!(*story).js": [
-      "yarn test",
+      "yarn test --passWithNoTests",
       "yarn format",
       "yarn lint:fix",
       "yarn validate"

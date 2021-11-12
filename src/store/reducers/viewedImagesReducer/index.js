@@ -27,7 +27,7 @@ const reducer = (state = initialState, { type, payload }) => {
     case GET_VIEWED_IMAGES_SUCCEDED:
       return {
         ...state,
-        data: state.data,
+        data: payload,
         isLoading: false,
       };
 
